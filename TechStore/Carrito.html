@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logotipo.jpg" alt="TechStore Logo" class="logo">
+            <h1>Carrito</h1>
+        </div>
+        <div class="menu">
+            <a href="index.html" class="menu-item">Inicio</a> |
+            <a href="Computadoras.html" class="menu-item">Computadoras</a> |
+            <a href="Teclados.html" class="menu-item">Teclados</a> |
+            <a href="Sillas.html" class="menu-item">Sillas</a> |
+            <a href="Headset.html" class="menu-item">Headset</a> |
+            <a href="Carrito.html" class="menu-item">Carrito</a>
+        </div>
+        <h1>Productos en el Carrito</h1>
+        <p id="cart-empty-text" style="text-align: center;">El carrito está vacío</p>
+        <div id="cart-items" class="grid-container">
+            <!-- Lista de Carritos -->
+        </div>
+        <button class="boton-custom" id="clear-cart-button">Limpiar Carrito</button>
+    </div>
+    <script src="scriptcarrito.js"></script>
+    <script>
+        document.getElementById('clear-cart-button').addEventListener('click', function() {
+        localStorage.removeItem('carrito');
+        alert("El carrito ha sido limpiado correctamente.");
+        window.location.href = "carrito.html"; // Redirige a la página de inicio
+    });
+    
+        </script>
+</body>
+</html>

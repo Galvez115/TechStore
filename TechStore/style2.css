@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    margin-top: 125px;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+
+}
+
+.container {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    justify-bottom: 50px;
+}
+
+.logo {
+    width: 125px;
+    height: auto;
+    margin-right: -6.3em;
+}
+
+h1 {
+    font-size: 36px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+.menu {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.menu-item {
+    text-decoration: underline;
+    color: white;
+    margin: 0 10px;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+}

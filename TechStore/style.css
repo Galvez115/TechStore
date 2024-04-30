@@ -1,0 +1,248 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    font-size: 12px;
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+
+}
+
+.container {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 125px;
+    height: auto;
+    margin-right: -6.3em;
+}
+
+h1 {
+    font-size: 36px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: white;
+    margin: 0 12px; 
+    border-radius: 8px; 
+    font-size: 18px; 
+    padding: 4px 6px; 
+    transition: background-color 0.3s, color 0.3s; /* transición suave */
+}
+
+.menu-item:hover {
+    background-color: white; 
+    color: black; 
+}
+
+.menu-item:hover,
+.menu-item {
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; 
+}
+
+ 
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 250px; 
+}
+
+.slides {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0; 
+    left: 50; 
+    bottom: 20px;
+    transform: translate(0, 0); 
+    opacity: 0; /* Inicialmente ocultamos todas las imágenes */
+    transition: opacity 1s ease; /* Transición de opacidad durante 1 segundo */
+}
+
+.slide.current {
+    opacity: 1; 
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.prev {
+    left: 71px; 
+}
+
+.next {
+    right: 71px; 
+}
+
+.prev:hover,
+.next:hover {
+    background-color: white; 
+    color: black; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.grid-item {
+    text-align: center;
+    border-right: 1px solid white; 
+    padding-right: 10px;
+}
+
+.grid-item:last-child {
+    border-right: none; 
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.product-name {
+    margin: 0;
+    font-size: 16px;
+}
+
+.product-price {
+    margin: 0;
+    font-size: 14px;
+}
+
+.menu2 {
+    margin-top: 20px;
+}
+
+.menu2-item {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+.menu2-item:hover {
+    text-decoration: underline;
+}
+
+table {
+    border: 1px solid black;
+    margin: auto; /* Centro la tabla */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 0px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    }
+
+ul li{
+    margin-bottom: 10px;
+}
+
+li {
+    text-decoration: none; 
+    margin-bottom: 5px; 
+    color: gray; 
+    }
+
+li a {
+    text-decoration: none; 
+    color: inherit; 
+        }
+
+.espacio {
+    padding: 1px;
+}
+
+th, td {
+    padding-right: 50px;
+    padding-left: 20px; 
+}
+
+.boton-custom {
+    background-color: transparent; /* Fondo transparente */
+    color: white;
+    border: 1px solid white; 
+    border-radius: 5px; /* Redondeado */
+    padding: 8px 16px; /* Espaciado DENTRO del botón */
+    font-size: 16px; 
+    margin-top: 10px; /* Espaciado en la parte superior */
+    transition: transform 0.3s ease; /* Transición (Hover) */
+}
+
+.boton-custom:hover {
+    transform: scale(0.95); /* Reducción de tamaño */
+  }
+   
+  .boton-custom:active {
+    background-color: white;
+    color: black; 
+  }
+
+.li2 {
+    margin-bottom: 5px; /* Espacio entre elementos de lista */
+}
+
+#anim {
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el elemento */
+    color: darkgray; /* Color de texto predeterminado */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+#anim:hover {
+    color: white; /* Cambia el color del texto a blanco cuando se pasa el mouse sobre él */
+    text-decoration: none; /* Elimina el subrayado cuando se pasa el mouse sobre él */
+}

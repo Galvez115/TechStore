@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logotipo.jpg" alt="TechStore Logo" class="logo">
+            <h1>Teclados</h1>
+        </div>
+        <div class="menu">
+	    <a href="index.html" class="menu-item">Inicio</a> |
+            <a href="Computadoras.html" class="menu-item">Computadoras</a> |
+            <a href="Teclados.html" class="menu-item">Teclados</a> |
+            <a href="Sillas.html" class="menu-item">Sillas</a> |
+            <a href="Headset.html" class="menu-item">Headset</a> |
+            <a href="Carrito.html" class="menu-item">Carrito</a>
+        </div>
+        <h1>Teclados Gamer</h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="https://www.cyberpuerta.mx/img/product/M/CP-LOGITECH-920-012127-aa2d05.jpg" alt="Producto 1">
+                <p class="product-name">Logitech Teclado Gamer PRO X TKL</p>
+                <p class="product-price"><strong>$2500.00</strong></p>
+                <button class="boton-custom añadir-al-carrito" data-nombre="Logitech Teclado Gamer PRO X TKL" data-precio="2500.00" data-imagen="https://www.cyberpuerta.mx/img/product/M/CP-LOGITECH-920-012127-aa2d05.jpg">Añadir al carrito</button>
+            </div>
+
+            <div class="grid-item">
+                <img src="https://www.cyberpuerta.mx/img/product/M/CP-LOGITECH-920-009495-1.jpg" alt="Producto 2">
+                <p class="product-name">Teclado Gamer Logitech G915 TKL RGB</p>
+                <p class="product-price"><strong>$1800.00</strong></p>
+                <button class="boton-custom añadir-al-carrito" data-nombre="Teclado Gamer Logitech G915 TKL RGB" data-precio="1800.00" data-imagen="https://www.cyberpuerta.mx/img/product/M/CP-LOGITECH-920-009495-1.jpg">Añadir al carrito</button>
+            </div>
+
+	    <div class="grid-item">
+                <img src="https://www.cyberpuerta.mx/img/product/XL/CP-LOGITECH-920-009660-3.jpg" alt="Producto 3">
+                <p class="product-name">Teclado Gamer Logitech G915 TKL RGB</p>
+                <p class="product-price"><strong>$2800.00</strong></p>
+                <button class="boton-custom añadir-al-carrito" data-nombre="Teclado Gamer Logitech G915 TKL RGB" data-precio="2800.00" data-imagen="https://www.cyberpuerta.mx/img/product/XL/CP-LOGITECH-920-009660-3.jpg">Añadir al carrito</button>
+            </div>
+    </div>
+    <footer> Fernanda J. Ramos Fuentes</footer>
+    <script src="scriptcarrito.js"></script>
+    <script>
+        function mostrarNotificacionProductoAgregado(producto) {
+          alert(`Se ha añadido "${producto}" a tu carrito.`);
+        }
+
+        const botonesAgregarCarrito = document.querySelectorAll('.añadir-al-carrito');
+
+        botonesAgregarCarrito.forEach(boton => {
+          boton.addEventListener('click', (event) => {
+            event.preventDefault();
+            const nombreProducto = boton.dataset.nombre;
+            mostrarNotificacionProductoAgregado(nombreProducto);
+          });
+        });
+    </script>
+</body>
+</html>
